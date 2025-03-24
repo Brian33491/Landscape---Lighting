@@ -45,20 +45,20 @@
     }
 }
 
-.parent>a::after{
+.people>a::after{
     content: "\25BC";
     font-size: .75rem;
     color: rbga(255, 255, 255, .5);
     float: right;
 }
 
-.parent ul{
+.people ul{
     list-style-type: none;
     padding: 0;
     background-color: $primaryColor;
     display: none;
 }
 
-.parent:hover ul{
+.people:hover ul{
     display: block;
 }
