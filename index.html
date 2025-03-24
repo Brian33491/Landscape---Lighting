@@ -61,9 +61,27 @@
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
-      <div class="swiper-slide"><img src="images/small_imageslider.webp"></div>
-      <div class="swiper-slide"><img src="images/small_imageslider2.webp"></div>
-      <div class="swiper-slide"><img src="images/small_imageslider3.webp"></div>
+      <div class="swiper-slide">
+        <picture>
+            <source srcset="images/small_imageslider.webp" media="(max-width: 400px)">
+            <source srcset="images/medium_imageslider.webp" media="(max-width: 800px)">
+            <img src="images/large_imageslider.webp" alt="sliderA" width="16" height="5">
+        </picture>
+      </div><!--end of one slide-->
+      <div class="swiper-slide">
+        <picture>
+            <source srcset="images/small_imageslider2.webp" media="(max-width: 400px)">
+            <source srcset="images/medium_imageslider2.webp" media="(max-width: 800px)">
+            <img src="images/large_imageslider2.webp" alt="sliderA" width="16" height="5">
+        </picture>
+      </div><!--end of one slide-->
+      <div class="swiper-slide">
+        <picture>
+            <source srcset="images/small_imageslider3.webp" media="(max-width: 400px)">
+            <source srcset="images/medium_imageslider3.webp" media="(max-width: 800px)">
+            <img src="images/large_imageslider3.webp" alt="sliderA" width="16" height="5">
+        </picture>
+      </div><!--end of one slide-->
     
     </div>
     <!-- If we need pagination -->
