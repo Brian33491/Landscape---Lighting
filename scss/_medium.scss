@@ -44,8 +44,44 @@
     li:hover ul{
         left: auto;
     }
+    
 
     
+}
+
+#theNav {
+    background-color: $accentColor;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#theNav li {
+    border-right: 1px solid rgba(0,0,0,0.1);
+    position: relative; /* Needed for absolute positioning of submenu */
+}
+
+#theNav li a {
+    padding: .9rem 1.2rem;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+#theNav li ul {
+    background-color: $primaryColor;
+    list-style-type: none;
+    padding: 0;
+    position: absolute;
+    top: 100%; /* Make sure it drops down below the parent item */
+    left: 0;
+    display: none;
+    z-index: 1000;
+}
+
+#theNav li:hover > ul {
+    display: block;
 }
 div.people {
     section{
