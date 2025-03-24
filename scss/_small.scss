@@ -17,6 +17,7 @@ body {
     font-family: $defaultFont;
     font-weight: $lightWeight;
     min-width: 320px;
+    
 }
 
 
@@ -86,6 +87,47 @@ div.people {
         
     }//end section
 }//end people
+
+div.city {
+    display: grid;
+    gap: 20px;
+    
+    section {
+        position: relative;
+        background-color: rgb(163, 163, 163);
+        border-radius: 10px; 
+        overflow: hidden; 
+        
+        h2 {
+            margin: 0; 
+            padding: 10px; 
+            text-align: center;
+            font-size: 1.5rem;
+            background-color: rgb(145, 145, 145);
+            
+        }
+        
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0; 
+        }
+        
+        img:last-child {
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}
+
+
+
+
+
+
+
+
 
 
 

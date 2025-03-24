@@ -375,6 +375,34 @@ div.people section img:hover {
   transform: rotate(15deg);
 }
 
+div.city {
+  display: grid;
+  gap: 20px;
+}
+div.city section {
+  position: relative;
+  background-color: rgb(163, 163, 163);
+  border-radius: 10px;
+  overflow: hidden;
+}
+div.city section h2 {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: rgb(145, 145, 145);
+}
+div.city section img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+}
+div.city section img:last-child {
+  position: absolute;
+  bottom: 0;
+}
+
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
   background-color: #1d295f;
@@ -501,6 +529,10 @@ footer a {
          column-gap: 4px;
     padding: 10px;
   }
+  div.city {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media only screen and (min-width: 64rem) {
   header, nav, main {
@@ -512,5 +544,9 @@ footer a {
     grid-template-columns: 200px auto;
     -moz-column-gap: 8px;
          column-gap: 8px;
+  }
+  div.city {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
