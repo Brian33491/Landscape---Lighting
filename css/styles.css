@@ -462,19 +462,19 @@ footer a {
   #theNav.open {
     height: auto;
   }
-  .people > a::after {
+  .parent > a::after {
     content: "▼";
     font-size: 0.75rem;
     color: rbga(255, 255, 255, 0.5);
     float: right;
   }
-  .people ul {
+  .parent ul {
     list-style-type: none;
     padding: 0;
     background-color: #1d295f;
     display: none;
   }
-  .people:hover ul {
+  .parent:hover ul {
     display: block;
   }
 }
