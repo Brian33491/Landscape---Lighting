@@ -71,7 +71,21 @@ main {
   }
 
 
-
+div.people {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    section{
+        padding: 7px;
+        img{
+            width: 100%;
+            height: auto;
+            clip-path: circle(50% at 50% 50%);
+            transition: transform 1s;
+            &:hover {transform: rotate(15deg);}
+        }
+        
+    }//end section
+}//end people
 
 
 
