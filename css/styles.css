@@ -378,6 +378,7 @@ div.people section img:hover {
 div.city {
   display: grid;
   gap: 20px;
+  padding: 0 15px;
 }
 div.city section {
   position: relative;
