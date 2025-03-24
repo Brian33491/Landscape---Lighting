@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -325,7 +326,7 @@ body {
 
 header {
   display: grid;
-  grid-template-columns: 50px auto;
+  grid-template-columns: 50px auto 44px;
   -moz-column-gap: 10px;
        column-gap: 10px;
   align-items: center;
@@ -367,6 +368,64 @@ footer a {
   color: #ccc;
 }
 
+@media only screen and (max-width: 34.9375rem) {
+  #theButton {
+    border: none;
+    background: none;
+    font-size: 2rem;
+    color: #555;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+  }
+  #theButton::before {
+    content: "☰";
+  }
+  #theButton.open::before {
+    content: "✕";
+    font-size: 1.6rem;
+  }
+  #theNav {
+    background-color: #3990c3;
+    height: 0;
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  #theNav li a {
+    display: block;
+    padding: 0.75rem 2vw;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  #theNav li.active a {
+    background-color: #7c1d47;
+  }
+  #theNav li a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  #theNav.open {
+    height: auto;
+  }
+  .parent > a::after {
+    content: "▼";
+    font-size: 0.75rem;
+    color: rbga(255, 255, 255, 0.5);
+    float: right;
+  }
+  .parent ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #1d295f;
+    display: none;
+  }
+  .parent:hover ul {
+    display: block;
+  }
+}
 @media only screen and (min-width: 35rem) {
   /* NAVIGATION STUFF GOES HERE  */
 }
